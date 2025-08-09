@@ -4,8 +4,32 @@ html {
 }
 
 nav {
-  height: 45px;
+  display: inline-block;
+  width: 80%;
+
   background-color: lightblue;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.twocolumngrid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  ;
+  grid-gap: 10px;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: normal;
+  row-gap: inherit;
+}
+
+.twocolumngrid img {
+  width: 100%;
+
 }
 
 body {
@@ -13,12 +37,13 @@ body {
   font-size: 15px;
 }
 
+/*
 ul {
   display: flex;
   justify-content: space-between;
 
 }
-
+*/
 p {
   line-height: 30px;
 }
@@ -26,6 +51,13 @@ p {
 img {
   margin-top: 10px;
 }
+
+header img {
+  width: 10%;
+  position: relative;
+  top: 20px;
+}
+
 
 header {
   background-color: lightgrey;
